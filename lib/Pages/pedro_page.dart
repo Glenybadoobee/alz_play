@@ -79,7 +79,7 @@ class PedroPage extends StatelessWidget {
                   ),
                   const SizedBox(width: 6),
                   const Text(
-                    '120',
+                    '0',
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,

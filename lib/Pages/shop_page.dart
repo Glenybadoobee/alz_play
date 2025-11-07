@@ -15,7 +15,7 @@ class _ShopPageState extends State<ShopPage> {
   final AudioPlayer _player = AudioPlayer();
   double _currentVolume = 0.5;
   bool _showSettings = false;
-  int userCoins = 120;
+  int userCoins = 0;
 
   double _scale = 1.0;
   double _rotation = 0.0;

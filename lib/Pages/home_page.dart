@@ -260,7 +260,7 @@ class _HomePageState extends State<HomePage> {
                   Image.asset('assets/coin.png', width: 28, height: 28),
                   const SizedBox(width: 6),
                   const Text(
-                    '120',
+                    '0',
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
