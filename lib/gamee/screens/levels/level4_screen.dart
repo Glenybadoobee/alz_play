@@ -3,7 +3,7 @@ import 'package:alz_play/gamee/widgets/settings_page.dart';
 import 'package:alz_play/gamee/services/coin_service.dart';
 import 'package:alz_play/widgets/top_bar.dart';
 import '/Game/game_page.dart';
-import 'level0_screen.dart';
+import 'level5_screen.dart';
 
 class Level4Screen extends StatefulWidget {
   const Level4Screen({super.key});
@@ -55,7 +55,7 @@ class _Level4ScreenState extends State<Level4Screen> {
         if (!mounted) return;
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => const Level0Animated()),
+          MaterialPageRoute(builder: (context) => const Level5Screen()),
         );
       } else {
         setState(() {
