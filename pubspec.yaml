@@ -42,4 +42,17 @@ flutter:
     - assets/images/neutral.png
     - assets/images/sad.png
     - assets/images/Celrc.png
+    - assets/level1/
+    - assets/level2/
+    - assets/level3/
+    - assets/level4/
+    - assets/level5/
+    - assets/level6/
+    - assets/level7/
+    - assets/level8/
+    - assets/folder1/
+    - assets/folder2/
+    - assets/folder3/
+    - assets/folder4/
+    - assets/raccoon.png
 

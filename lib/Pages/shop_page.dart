@@ -216,7 +216,7 @@ class _ShopPageState extends State<ShopPage> {
             children: [
               const SizedBox(height: 10),
 
-              // 🖼️ Character image
+              // Character image
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -302,7 +302,7 @@ class _ShopPageState extends State<ShopPage> {
 
   void _handlePurchase(BuildContext context, int index, int price) {
     if (userCoins < price) {
-      _showSnackBar(context, 'Kulang pa pera mo sah, bounce ka muna.', error: true);
+      _showSnackBar(context, 'Not enough coins :(', error: true);
       return;
     }
 

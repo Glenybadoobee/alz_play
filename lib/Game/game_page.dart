@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:alz_play/gamee/screens/levels/level1_screen.dart';
+import 'package:alz_play/gamee/screens/screens/Puzzle/dog_puzzle.dart';
+
+
 
 class GamePage extends StatefulWidget {
   const GamePage({super.key});
@@ -123,8 +127,14 @@ class _GamePageState extends State<GamePage> {
                               imagePath: 'assets/puzzle.jpg',
                               bgColor: const Color(0xFFE96DFF),
                               gameName: 'Puzzle',
-                              onTap: () => print("Puzzle Game clicked"),
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (_) => const DogPuzzle()),
+                                );
+                              },
                             ),
+
                             const SizedBox(height: 15),
                             _buildGameOption(
                               imagePath: 'assets/puzzle.jpg',
@@ -137,7 +147,12 @@ class _GamePageState extends State<GamePage> {
                               imagePath: 'assets/puzzle.jpg',
                               bgColor: const Color(0xFF9E9E9E),
                               gameName: 'Guess',
-                              onTap: () => print("Guess Game clicked"),
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Level1Screen()),
+                                );
+                              },
                             ),
                           ],
                         ),
