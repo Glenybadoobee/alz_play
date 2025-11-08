@@ -61,6 +61,19 @@ flutter:
     - assets/folder2/
     - assets/trophy/
     - assets/coins/
-    - assets/match_game/
+    - assets/match_game/folder2/
+    - assets/match_game/folder3/
+    - assets/match_game/folder4/
+    - assets/match_game/folder5/
+    - assets/match_game/folder6/
+    - assets/match_game/folder7/
+    - assets/match_game/folder8/
+    - assets/match_game/folder1/
+    - assets/match_game/level1/
+    - assets/match_game/level2/
+    - assets/match_game/level3/
+
+
+
 
 

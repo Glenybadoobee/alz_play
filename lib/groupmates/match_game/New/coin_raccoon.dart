@@ -221,8 +221,8 @@ class _CoinsRaccoonState extends State<CoinsRaccoon>
 
 
                         Positioned(
-                          left: -35, // slight left for perfect hold
-                          bottom: 95, // lower so it sits near paw
+                          left: -35,
+                          bottom: 95,
                           child: Transform.rotate(
                             angle: -0.18, // less tilt for realism
                             child: Image.asset(
