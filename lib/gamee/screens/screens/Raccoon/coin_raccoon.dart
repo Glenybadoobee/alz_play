@@ -63,7 +63,7 @@ class _GiftCoinsPageState extends State<GiftCoinsPage>
   }
 
   Future<void> _onRaccoonTap() async {
-    // Raccoon touch animation (pop effect)
+
     setState(() => _scale = 1.2);
     await Future.delayed(const Duration(milliseconds: 150));
     setState(() => _scale = 1.0);
@@ -98,7 +98,6 @@ class _GiftCoinsPageState extends State<GiftCoinsPage>
           children: [
 
             ...List.generate(_coinCount, (index) => _buildPoppingCoin(index, size)),
-
 
             SafeArea(
               child: Padding(
@@ -186,7 +185,6 @@ class _GiftCoinsPageState extends State<GiftCoinsPage>
               ),
             ),
 
-            // 🦝 Raccoon and Trophy Section (Fixed Position)
             Align(
               alignment: Alignment.bottomCenter,
               child: Padding(

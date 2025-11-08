@@ -16,7 +16,7 @@ class _MemoriesPageState extends State<MemoriesPage>
   final AudioPlayer _player = AudioPlayer();
   int? _playingIndex;
 
-  // Animation for play button bounce
+
   late AnimationController _animController;
   late Animation<double> _scaleAnimation;
 

@@ -190,13 +190,12 @@ class _RaccoonSandwichPageState extends State<RaccoonSandwichPage>
                 ),
               ),
 
-              // 🔘 Buttons (Back & Continue)
               Padding(
                 padding: const EdgeInsets.only(bottom: 40),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    // ⬅ Back Button
+
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.lightBlueAccent,
@@ -215,7 +214,7 @@ class _RaccoonSandwichPageState extends State<RaccoonSandwichPage>
                       ),
                     ),
 
-                    // ➡ Continue Button
+
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.lightBlueAccent,

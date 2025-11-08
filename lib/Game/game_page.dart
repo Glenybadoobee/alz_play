@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:alz_play/gamee/screens/levels/level1_screen.dart';
 import 'package:alz_play/gamee/screens/screens/Puzzle/dog_puzzle.dart';
-
+import '/groupmates/match_game/match_game_page.dart';
 
 
 class GamePage extends StatefulWidget {
@@ -140,8 +140,14 @@ class _GamePageState extends State<GamePage> {
                               imagePath: 'assets/puzzle.jpg',
                               bgColor: const Color(0xFFF6E36A),
                               gameName: 'Match',
-                              onTap: () => print("Memory Match clicked"),
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (_) => const MatchGamePage()),
+                                );
+                              },
                             ),
+
                             const SizedBox(height: 15),
                             _buildGameOption(
                               imagePath: 'assets/puzzle.jpg',

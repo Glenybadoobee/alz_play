@@ -19,11 +19,10 @@ class _GiftCoinsState extends State<GiftCoins>
   final int coinCount = 8;
   double _scale = 1.0;
 
-  // Adjustable raccoon size and alignment
   double raccoonSize = 300;
   Alignment raccoonAlignment = const Alignment(0, 1);
 
-  int coins = 0; // current coin value
+  int coins = 0;
 
   @override
   void initState() {
@@ -94,10 +93,10 @@ class _GiftCoinsState extends State<GiftCoins>
 
     return Scaffold(
       body: GestureDetector(
-        onTap: _goToNextPage, // Tap anywhere to continue
+        onTap: _goToNextPage,
         child: Stack(
           children: [
-            /// 🌈 Background Gradient
+
             Container(
               decoration: const BoxDecoration(
                 gradient: LinearGradient(
@@ -108,10 +107,10 @@ class _GiftCoinsState extends State<GiftCoins>
               ),
             ),
 
-            /// 💰 Falling Coins
+
             ...List.generate(coinCount, (index) => _buildFallingCoin(index, size)),
 
-            /// 🧠 Top Bar (same style as Level8Screen)
+
             TopBar(
               onMenuPressed: () {
                 Navigator.push(
@@ -122,7 +121,6 @@ class _GiftCoinsState extends State<GiftCoins>
               coins: coins,
             ),
 
-            /// 🦝 Raccoon Image
             Align(
               alignment: raccoonAlignment,
               child: AnimatedScale(
@@ -136,7 +134,6 @@ class _GiftCoinsState extends State<GiftCoins>
               ),
             ),
 
-            /// 📝 “Tap anywhere to continue” — centered
             Align(
               alignment: const Alignment(0, 0.05),
               child: const Text(

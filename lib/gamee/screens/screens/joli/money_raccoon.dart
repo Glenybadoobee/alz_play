@@ -51,7 +51,7 @@ class _MoneyPageState extends State< MoneyPage >
             child: Transform.scale(
               scale: 0.8 + (progress * 0.4),
               child: Image.asset(
-                'assets/coins/coin.png',
+                'assets/coins/coin4.png',
                 width: 40,
                 height: 40,
               ),
@@ -63,7 +63,7 @@ class _MoneyPageState extends State< MoneyPage >
   }
 
   Future<void> _onRaccoonTap() async {
-    // Raccoon touch animation (pop effect)
+
     setState(() => _scale = 1.2);
     await Future.delayed(const Duration(milliseconds: 150));
     setState(() => _scale = 1.0);
@@ -96,10 +96,9 @@ class _MoneyPageState extends State< MoneyPage >
         ),
         child: Stack(
           children: [
-            // 🪙 Falling coins
+
             ...List.generate(_coinCount, (index) => _buildPoppingCoin(index, size)),
 
-            // 🧩 Header section (AlzPlay, Menu, Coins)
             SafeArea(
               child: Padding(
                 padding:
@@ -134,7 +133,7 @@ class _MoneyPageState extends State< MoneyPage >
                         ),
                         const SizedBox(height: 10),
 
-                        // 💰 Coin Box
+
                         Container(
                           decoration: BoxDecoration(
                             color: const Color(0xFF7ED6FC),

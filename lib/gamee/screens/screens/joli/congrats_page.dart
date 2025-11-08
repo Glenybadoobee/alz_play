@@ -19,7 +19,7 @@ class _OksPageState extends State<OksPage>
   void initState() {
     super.initState();
 
-    // Simple fade animation for speech bubble
+
     _controller =
         AnimationController(vsync: this, duration: const Duration(seconds: 2));
     _bubbleOpacity = Tween<double>(begin: 0.0, end: 1.0).animate(
